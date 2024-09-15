@@ -364,7 +364,8 @@ function main_dialog()
     -- ~ !important: Add button must be the first item that is created
     dialog_UI:add_button("Add", addBookmark, 1, 1, 1, 1)
     -- bookmarks labels input box
-    bookmarks_dialog['text_input'] = dialog_UI:add_text_input('Bookmark (' .. (#Bookmarks + 1) .. ')', 2, 1, 1, 1)
+    --bookmarks_dialog['text_input'] = dialog_UI:add_text_input('Bookmark (' .. (#Bookmarks + 1) .. ')', 2, 1, 1, 1)
+    bookmarks_dialog['text_input'] = dialog_UI:add_text_input('Current', 2, 1, 1, 1)
 
     -- buttons
     dialog_UI:add_button("Go", goToBookmark, 1, 2, 1, 1)
